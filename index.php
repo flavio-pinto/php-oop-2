@@ -5,3 +5,16 @@
  * Come fatto nell’esercizio di ieri poi eseguite degli output istanziando oggetti delle varie classi
  */
 
+//Include
+include_once __DIR__ . '/classes/Schede-video.php';
+include_once __DIR__ . '/classes/Ram.php';
+
+$schedaVideo1 = new SchedaVideo('AMD', 'RX 580', 'Scheda grafica', '400', 'Sì', 'No', '8gb', 'GDDR5');
+
+echo $schedaVideo1->stampaInfo();
+
+echo '<br><br><br>';
+
+$memoriaRam1 = new Ram('Crucial', 'Ballistix', 'Memoria Ram', '120', 'No', 'CL14', 'Low Profile', '16gb', 'DDR4');
+
+echo $memoriaRam1->stampaInfo();
